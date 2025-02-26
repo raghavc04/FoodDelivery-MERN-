@@ -1,0 +1,145 @@
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-content-left, 
+.footer-content-center, 
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.footer-content-left img {
+    width: 150px;
+}
+
+.footer-content-left p {
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+.footer-content-center h2, 
+.footer-content-right h2 {
+    color: wheat;
+}
+
+.footer-content-center ul, 
+.footer-content-right ul {
+    padding: 0;
+}
+
+.footer-content-center li, 
+.footer-content-right li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-content-center li:hover, 
+.footer-content-right li:hover {
+    color: #f5a623;
+}
+
+/* Social Icons */
+.footer-social-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icon a:hover {
+    transform: scale(1.1);
+}
+
+.footer-social-icon img,
+.footer-social-icon svg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icon img:hover, 
+.footer-social-icon svg:hover {
+    opacity: 0.8;
+}
+
+/* Divider Line */
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+    background-color: grey;
+    border: none;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.footer-copyright .highlight {
+    font-weight: bold;
+    color: wheat;
+}
+
+
+.footer-github-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-github-link svg {
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-github-link:hover svg {
+    transform: scale(1.2);
+  }
+
+
+  @media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .footer-copyright{
+        text-align: center;
+    }
+    
+    
+}

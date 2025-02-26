@@ -1,0 +1,175 @@
+/* General Navbar Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Centered Navigation Menu */
+.navbar-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+/* Active Link Styling */
+.navbar-menu li a.active {
+  color: #007bff;
+}
+
+.navbar-menu li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+/* Navbar Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Search & Cart Icons */
+.search-icon,
+.navbar-search-icon img {
+  width: 24px;
+  cursor: pointer;
+}
+
+/* Small Red Dot on Cart When Items Exist */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border: 2px solid white; /* White border to make it look neat */
+}
+
+/* Profile Dropdown */
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-profile img {
+  width: 32px;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  width: 150px;
+  display: none;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: block;
+}
+
+/* Sign Up Button */
+.sign-up-btn {
+  padding: 8px 15px;
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sign-up-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Cart Icon Wrapper */
+.navbar-search-icon {
+  position: relative; /* Needed for absolute positioning of dot */
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 15px 3%;
+  }
+
+  .navbar-menu {
+    display: none; /* Hide menu on small screens */
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .sign-up-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-right {
+    gap: 5px;
+  }
+
+  .search-icon,
+  .navbar-search-icon img,
+  .navbar-profile img {
+    width: 20px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    top: -3px; /* Adjusted for proper placement */
+    right: -3px; /* Adjusted for proper placement */
+  }
+}
