@@ -1,7 +1,18 @@
-# Food Delivery App (MERN Stack)
+📌 Project Description
+The Food Delivery App is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project allows users to explore various food items, add them to their cart, place orders, and apply a special coupon code ("RAGHAVC04") to get a discount.
 
-This is a **Food Delivery** web application built using the **MERN (MongoDB, Express, React, Node.js) stack**. It allows users to browse food items, place orders, and apply a personal coupon code for a discount.
+The application provides secure authentication using JWT, a responsive user interface, and an intuitive ordering process. It also integrates MongoDB as the database to store user information, orders, and food items.
 
+This project is ideal for learning and implementing full-stack web development concepts, including React.js for frontend, Node.js & Express.js for backend APIs, and MongoDB for data storage.
+
+✨ Key Features
+✔ User Authentication (Signup/Login)
+✔ Browse and Search Food Items
+✔ Add Items to Cart and Place Orders
+✔ Apply Discount Coupon ("RAGHAVC04")
+✔ Secure API with JWT Authentication
+✔ Responsive UI for Mobile and Desktop
+✔ MongoDB Database for Storage
 ## 🚀 Tech Stack
 - **Frontend:** React.js, React Router, CSS
 - **Backend:** Node.js, Express.js, MongoDB
